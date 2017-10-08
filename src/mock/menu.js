@@ -154,6 +154,20 @@ let database = [
     name: 'Test Navigation22',
     route: '/navigation/navigation2/navigation2',
   },
+  {
+    id: '7',
+    bpid: '1',
+    name: 'Foods',
+    icon: 'food',
+    route: '/food',
+  },
+  {
+    id: '71',
+    mpid: '-1',
+    bpid: '2',
+    name: 'Food Detail',
+    route: '/food/:id',
+  },
 ]
 
 module.exports = {

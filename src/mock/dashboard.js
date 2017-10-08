@@ -63,6 +63,13 @@ const Dashboard = Mock.mock({
     sold: 3556,
     avatar: 'http://tva4.sinaimg.cn/crop.0.0.996.996.180/6ee6a3a3jw8f0ks5pk7btj20ro0rodi0.jpg',
   },
+  food: {
+    name: 'zuiidea',
+    email: 'zuiiidea@.gmail.com',
+    sales: 3241,
+    sold: 3556,
+    avatar: 'http://tva4.sinaimg.cn/crop.0.0.996.996.180/6ee6a3a3jw8f0ks5pk7btj20ro0rodi0.jpg',
+  },
   'completed|12': [
     {
       'name|+1': 2008,

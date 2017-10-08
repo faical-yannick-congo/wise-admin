@@ -4,7 +4,7 @@ import { connect } from 'dva'
 import { Row, Col, Card } from 'antd'
 import { color } from 'utils'
 import { Page } from 'components'
-import { NumberCard, Quote, Sales, Weather, RecentSales, Comments, Completed, Browser, Cpu, User } from './components'
+import { NumberCard, Quote, Sales, Weather, RecentSales, Comments, Completed, Browser, Cpu, User, Food } from './components'
 import styles from './index.less'
 
 const bodyStyle = {
@@ -15,7 +15,7 @@ const bodyStyle = {
 }
 
 function Dashboard ({ dashboard, loading }) {
-  const { weather, sales, quote, numbers, recentSales, comments, completed, browser, cpu, user } = dashboard
+  const { weather, sales, quote, numbers, recentSales, comments, completed, browser, cpu, user, food } = dashboard
   const numberCards = numbers.map((item, key) => (<Col key={key} lg={6} md={12}>
     <NumberCard {...item} />
   </Col>))
@@ -93,6 +93,11 @@ function Dashboard ({ dashboard, loading }) {
         <Col lg={8} md={24}>
           <Card bordered={false} bodyStyle={{ ...bodyStyle.bodyStyle, padding: 0 }}>
             <User {...user} />
+          </Card>
+        </Col>
+        <Col lg={8} md={24}>
+          <Card bordered={false} bodyStyle={{ ...bodyStyle.bodyStyle, padding: 0 }}>
+            <Food {...food} />
           </Card>
         </Col>
       </Row>
